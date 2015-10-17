@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_updata_head_layout"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp" 
+    android:padding="6dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pb_newsupdata_headprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/progress_red_newsloading" />
+
+            <ImageView
+                android:id="@+id/iv_newsupdata_arrow"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_listview_headview_red_arrow" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_newsupdata_headdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="下拉刷新"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_newsupdata_headtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_newsupdata_headdesc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="2015-10-2-14  21:08" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
